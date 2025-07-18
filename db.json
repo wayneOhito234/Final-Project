@@ -1,0 +1,69 @@
+{
+  "products": [
+    {
+      "id": "1752777127299",
+      "name": "Motor",
+      "departmentId": 1
+    },
+    {
+      "id": "1752777559727",
+      "name": "car",
+      "departmentId": 1
+    },
+    {
+      "id": "1752777576429",
+      "name": "simple",
+      "departmentId": 1
+    },
+    {
+      "id": "1752777583639",
+      "name": "cow",
+      "departmentId": 1
+    },
+    {
+      "id": "1752777604958",
+      "name": "wayne12",
+      "departmentId": 1
+    },
+    {
+      "id": "1752777648806",
+      "name": "wayne12",
+      "departmentId": 1
+    },
+    {
+      "id": "1752777885967",
+      "name": "Motor1",
+      "departmentId": 1
+    },
+    {
+      "id": "1752777921535",
+      "name": "comb",
+      "departmentId": 1
+    },
+    {
+      "id": "1752778074745",
+      "name": "pin",
+      "departmentId": 1
+    },
+    {
+      "id": "1752778438886",
+      "name": "soap",
+      "departmentId": 1
+    },
+    {
+      "id": 1752851838029,
+      "name": "wayne",
+      "departmentId": 1
+    },
+    {
+      "id": 1752852281143,
+      "name": "wayne",
+      "departmentId": 1
+    },
+    {
+      "id": 1752852305756,
+      "name": "1",
+      "departmentId": 1
+    }
+  ]
+}

@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <tittle> Product Tracking Sytem</tittle>
-        <link> rel="stylesheet" href="style.css">
-        </head>
-        <body>
-            <h1>Product Tracking System</h1>
-            <div id = "main content">
-                <h1>Add new product</h1>
-                <form id="create-product-form" action="" method="post">
-                    <label for="new-product-description">Product Description</label>
-                    <input type="text" id="new-product-description" name="New Product Description" placeholder="Enter product description">
-                    <input type="submit" value="Add new product">  
-                </form>
-                
-            <div id="product-list">
-                <h2>My Products</h2>
-                <ul id="Products">
-                    <!-- Product items will be dynamically added here -->
-                </ul>
-                </div>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Product Tracking System</title> <!-- Fixed typo from <tittle> -->
+    <link rel="stylesheet" href="style.css"> <!-- Corrected link tag -->
+</head>
+<body>
+    <h1>Product Tracking System</h1>
 
-              <script src="./src/index.js<"></script>
-        </body>  
+    <div id="main-content"> <!-- Removed space from ID -->
+        <h1>Add new product</h1>
+        <form id="create-product-form" action="" method="post">
+            <label for="new-product-description">Product Description</label>
+            <input type="text" id="new-product-description" name="New Product Description" placeholder="Product Name">
+            <input type="submit" value="Add new product">  
+        </form>
+        
+        <div id="list">
+            <h2> Product List: </h2>
+            <ul id="Products">
+         </ul>
+        </div>
+
+    </div id= "department">
+    <h2>Product's Current Department</h2>
+
+    </div>
+
+    <script src="./src/index.js"></script> <!-- Fixed script path -->
+</body>  
 </html>
