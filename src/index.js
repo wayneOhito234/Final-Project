@@ -60,4 +60,45 @@ window.onload = () => {
       .then(() => fetchProducts())
       .catch((err) => console.error("Error deleting product:", err));
   }
+  const departmentMap = {
+  1: "Project Management",
+  2: "Engineering Design",
+  3: "Electrical Assembly",
+  4: "Mechanical Assembly"
+};
+
+function renderGroupedProducts(products) {
+  const groupedDisplay = document.getElementById("departments-display");
+  groupedDisplay.innerHTML = "";
+
+  // Group products by departmentID
+  const grouped = {};
+
+  products.forEach(product => {
+    if (!grouped[product.departmentID]) {
+      grouped[product.departmentID] = [];
+    }
+    grouped[product.departmentID].push(product.productname);
+  });
+
+  // Render each department section
+  Object.keys(grouped).forEach(deptId => {
+    const deptName = departmentMap[deptId] || `Department ${deptId}`;
+    const section = document.createElement("div");
+    const title = document.createElement("h3");
+    title.textContent = deptName;
+
+    const ul = document.createElement("ul");
+    grouped[deptId].forEach(name => {
+      const li = document.createElement("li");
+      li.textContent = name;
+      ul.appendChild(li);
+    });
+
+    section.appendChild(title);
+    section.appendChild(ul);
+    groupedDisplay.appendChild(section);
+  });
+}
+
 };

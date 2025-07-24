@@ -1,11 +1,6 @@
 {
   "products": [
     {
-      "id": "1",
-      "productname": "Cable Assembly",
-      "departmentId": 3
-    },
-    {
       "id": 1753334286386,
       "productname": "wayne",
       "departmentID": 3
